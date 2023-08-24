@@ -5,15 +5,27 @@ body{
 
 .top-nav{
     position: sticky;
+    display: block;
     text-align: right;
     background-color: #5dd39e;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 1%;
     color: #513b56;
-    border-radius: 8px;
+    text-decoration: none; 
+    font-size: 17px;
+}
 
-    
+#mid-nav{
+    display: block;
+    text-align: center;
+    background-color: #5dd39e;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    color: #513b56;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .nav-button{
@@ -23,34 +35,26 @@ body{
     color: #513b56;
     border-width: 2px;
     border-color: #513b56;
-    border-right: 2px solid;
     margin: 0%;
-
-}
-
-.nav-button a{
-    color: inherit;
-}
-
-a:link{
     text-decoration: none;
+
+
 }
 
-.nav-button a:hover {
+a:hover {
     box-shadow: 1px 1px 8px 1px rgb(41, 41, 41);
 }
 
-.nav-button a:active {
+a:active {
     box-shadow: inset 1px 1px 8px 1px rgb(41, 41, 41);
-
+    background-color:  #bce784;
 }
 
-.nav-button a.active{
-    background: color #bce784;
-}
-
-input{
+input[type=text]{
     background-color: rgb(209, 209, 209);
+    padding: 6px;
+    border: none;
+    font-size: 17px;
 }
 
 input:active{
@@ -58,21 +62,31 @@ input:active{
     text-decoration: none;
 }
 
-    
+#header-text{ 
+    color: white;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 70px;
+    background-color: #0000003d;
+    margin-top:14%;
+}
 
 #header{
     background-image:
-    url('/sandbox/images/pexels-steve-johnson-933967.jpg'),
-    linear-gradient(to bottom, #348aa7,#1a4554);
-    background-size: cover;
-    width: 100%;
+    linear-gradient(#348ca900,#1a4354a9),
+    url('/sandbox/images/pexels-steve-johnson-933967.jpg');
+    background-size: auto;
+    width: 98%;
     height: 400px;
+    padding: 1%;
 }
 
 #grid-layout{
     display: grid;
     text-align: center;
     grid-template-columns:30% 40% 30%;
+    height: 600px;
 }
 
 #sidebar {
