@@ -10,7 +10,6 @@
 
 .nav-button{
     padding:4px;
-    background-color: #BCE784;
     margin: 0%;
 
 }
@@ -30,6 +29,10 @@ a:hover {
 a:active {
     box-shadow: inset 1px 1px 8px 1px rgb(41, 41, 41);
 
+}
+
+.active{
+    background: color #bce784;;
 }
 
 input{
