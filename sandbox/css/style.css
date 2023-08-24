@@ -1,0 +1,42 @@
+.top-nav{
+    position: sticky;
+    text-align: right;
+    background-color: #5dd39e;
+    padding: 1%;
+    margin: 0px;
+    color: #513b56;
+    
+}
+
+.nav-button{
+    padding:4px;
+    background-color: #BCE784;
+    margin: 0%;
+
+}
+
+a{
+    color: inherit;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: 1px 1px 8px 1px rgb(41, 41, 41);
+}
+
+a:active {
+    box-shadow: inset 1px 1px 8px 1px rgb(41, 41, 41);
+
+}
+
+input{
+    background-color: rgb(209, 209, 209);
+}
+
+input:active{
+    background-color: rgb(209, 209, 209);
+    text-decoration: none;
+}
