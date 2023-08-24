@@ -1,20 +1,34 @@
+
+body{
+    background-color: #348aa7;
+}
+
 .top-nav{
     position: sticky;
     text-align: right;
     background-color: #5dd39e;
-    padding: 1%;
-    margin: 0px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
     color: #513b56;
+    border-radius: 8px;
+
     
 }
 
 .nav-button{
-    padding:4px;
+    text-align: center;
+    position: relative;
+    padding:8px;
+    color: #513b56;
+    border-width: 2px;
+    border-color: #513b56;
+    border-right: 2px solid;
     margin: 0%;
 
 }
 
-a{
+.nav-button a{
     color: inherit;
 }
 
@@ -22,17 +36,17 @@ a:link{
     text-decoration: none;
 }
 
-a:hover {
+.nav-button a:hover {
     box-shadow: 1px 1px 8px 1px rgb(41, 41, 41);
 }
 
-a:active {
+.nav-button a:active {
     box-shadow: inset 1px 1px 8px 1px rgb(41, 41, 41);
 
 }
 
-.active{
-    background: color #bce784;;
+.nav-button a.active{
+    background: color #bce784;
 }
 
 input{
@@ -42,4 +56,32 @@ input{
 input:active{
     background-color: rgb(209, 209, 209);
     text-decoration: none;
+}
+
+    
+
+#header{
+    background-image:
+    url('/sandbox/images/pexels-steve-johnson-933967.jpg'),
+    linear-gradient(to bottom, #348aa7,#1a4554);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#grid-layout{
+    display: grid;
+    text-align: center;
+    grid-template-columns:30% 40% 30%;
+}
+
+#sidebar {
+    padding:10%;
+    background-color: #5dd39e;
+    box-shadow: inset 3px 3px 16px 3px #42946f;
+    border-radius: 8px;
+}
+
+#center-column{
+    padding:10%;
 }
