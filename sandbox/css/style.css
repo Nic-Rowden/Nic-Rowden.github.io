@@ -136,6 +136,7 @@ input:active{
     padding: 5%;
     background-color: whitesmoke;
     box-shadow: 1px 1px 8px 1px rgb(41, 41, 41);
+    overflow: scroll;
 
 }
 
