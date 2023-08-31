@@ -1,54 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const searchForm = document.getElementById("searchForm");
-    const searchInput = document.getElementById("searchInput");
-    const resultsContainer = document.getElementById("results");
+// Get references to the elements
+const searchForm = document.getElementById('searchForm');
+const searchInput = document.getElementById('searchInput');
 
-    // Replace this with your actual project data
-    const projectData = [
-        {
-            title: "Recent Project 1",
-            description: "This is the description for Recent Project 1.",
-            // Add more properties as needed
-        },
-        {
-            title: "Recent Project 2",
-            description: "This is the description for Recent Project 2.",
-            // Add more properties as needed
-        },
-        {
-            title: "Recent Project 3",
-            description: "This is the description for Recent Project 3.",
-            // Add more properties as needed
-        },
-        // Add more project objects as needed
-    ];
-
-    searchForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form submission
-        
-        const searchTerm = searchInput.value.trim().toLowerCase();
-
-        // Perform the search and display results
-        const searchResults = projectData.filter(project => {
-            return project.title.toLowerCase().includes(searchTerm) ||
-                   project.description.toLowerCase().includes(searchTerm);
-            // Add additional fields to search here if needed
-        });
-
-        resultsContainer.innerHTML = ""; // Clear previous results
-
-        if (searchResults.length === 0) {
-            resultsContainer.innerHTML = "<p>No results found.</p>";
-        } else {
-            searchResults.forEach(project => {
-                const resultItem = document.createElement("div");
-                resultItem.innerHTML = `
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <hr>
-                `;
-                resultsContainer.appendChild(resultItem);
-            });
-        }
-    });
+// Attach event listener to the form submission
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent the form from actually submitting
+    
+    const searchTerm = searchInput.value.trim();
+    
+    if (searchTerm !== '') {
+        // Redirect to the results page with the search term as a query parameter
+        window.location.href = `search-results.html?query=${encodeURIComponent(searchTerm)}`;
+    }
 });
+// Get reference to the results container
+const resultsContainer = document.getElementById('resultsContainer');
+
+// Get the search term from the URL query parameter
+const queryParams = new URLSearchParams(window.location.search);
+const searchTerm = queryParams.get('query');
+
+if (searchTerm) {
+    // Perform your search logic here and populate the resultsContainer
+    // For demonstration purposes, let's just display the search term
+    resultsContainer.textContent = `Search results for: ${searchTerm}`;
+} else {
+    resultsContainer.textContent = "No search term provided.";
+}
