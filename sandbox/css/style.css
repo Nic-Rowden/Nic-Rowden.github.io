@@ -14,6 +14,25 @@ body{
     color: #513b56;
     text-decoration: none; 
     font-size: 17px;
+    align-items: center;
+}
+#searchForm{
+    float: right;
+    display: block;
+    text-align: right;
+    align-items: center;
+}
+
+button {
+  float: right;
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+
+}
+button:hover {
+  background: #ccc;
 }
 
 #logo{
@@ -111,7 +130,7 @@ input:active{
     border-radius: 8px;
 }
 
-#sidebar-1-img{
+.sidebar-1-img{
     width: 80%;
     margin: 2%;
     padding: 6%;
@@ -120,7 +139,7 @@ input:active{
 
 }
 
-#sidebar-2-img{
+.sidebar-2-img{
     width: 80%;
     text-align: center;
     margin: 2%;
@@ -140,17 +159,17 @@ input:active{
 
 }
 
-#center-column-img{
+.center-column-img{
     float: center;
     width: 90%;
 
 }
 
-#center-column-header{
+.center-column-header{
     text-align: center;
 }
 
-#center-column-p{
+.center-column-p{
     text-align: left;
     text-indent: 2%;
     margin: 2%;
@@ -164,3 +183,5 @@ input:active{
     text-decoration: none; 
     font-size: 17px;
 }
+
+.is-hidden { display: none; }

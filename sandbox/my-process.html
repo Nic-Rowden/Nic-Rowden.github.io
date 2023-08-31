@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Process</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="top-nav">
         <span id="logo"><a href="index.html">Logo placeholder</a></span>
-        <a class="nav-button" href="index.html">Home</a>
-        <a class="nav-button" href="about.html">About</a>
-        <a class="nav-button" href="contact.html">Contact</a>
-        <input type="text" placeholder="Search...">
+        <a class="nav-button" href="index.html" ><i class="fa-solid fa-house" style="color: #513b56;"></i> Home</a>
+        <a class="nav-button" href="about.html"><i class="fa-solid fa-address-card" style="color: #513b56;"></i> About</a>
+        <a class="nav-button" href="contact.html"><i class="fa-solid fa-envelope" style="color: #513b56;"></i> Contact</a>
+        <form id="searchForm" action="search-results.html">
+            <input type="text" id="searchInput" name="query" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
             
     </div>
     <div id="header-home">
@@ -31,7 +36,7 @@
                 Graphics
             </h4>
            <a href="#latest-post">
-            <img id="sidebar-1-img"
+            <img class="sidebar-1-img"
                 src="images/pexels-yigithan-bal-1108532.jpg"
                 alt="Paint Palette"
             >
@@ -40,7 +45,7 @@
             </p>
             </a>
             <a href="#test-post">
-                <img id="sidebar-1-img"
+                <img class="sidebar-1-img"
                     src="images/pexels-deeana-arts-1646953 (1).jpg"
                     alt="Paint Palette"
                 >
@@ -49,7 +54,7 @@
                 </p>
                 </a>
             <a href="#test-post-2">
-                <img id="sidebar-1-img"
+                <img class="sidebar-1-img"
                     src="images/pexels-yigithan-bal-1108532.jpg"
                     alt="Paint Palette"
                 >
@@ -59,18 +64,18 @@
                 </a>
         </div>
         <div id="center-column">
-         <div id="latest-post">
-            <h1 id="center-column-header">
+         <div class="latest-post">
+            <h1 class="center-column-header">
                 Latest Project
              </h1>  
-            <img id="center-column-img"
+            <img class="center-column-img"
                 src="images/pexels-yigithan-bal-1108532.jpg"
                 alt="Paint Palette"
              > 
-             <h3 id="center-column-header">
+             <h3 class="center-column-header">
                 Project Name
              </h3>  
-            <p id="center-column-p">
+            <p class="center-column-p">
                 Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Enim neque dolores, dolor voluptate eum quod veniam 
                 pariatur nesciunt dicta tenetur eaque, iste eveniet culpa unde. Consequuntur hic 
@@ -80,17 +85,17 @@
         <hr>
         <br>
         <div id="test-post">
-            <h1 id="center-column-header">
+            <h1 class="center-column-header">
                 Latest Project
              </h1>  
-            <img id="center-column-img"
+            <img class="center-column-img"
                 src="images/pexels-yigithan-bal-1108532.jpg"
                 alt="Paint Palette"
              > 
-             <h3 id="center-column-header">
+             <h3 class="center-column-header">
                 Project Name
              </h3>  
-            <p id="center-column-p">
+            <p class="center-column-p">
                 Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Enim neque dolores, dolor voluptate eum quod veniam 
                 pariatur nesciunt dicta tenetur eaque, iste eveniet culpa unde. Consequuntur hic 
@@ -100,17 +105,17 @@
         <hr>
         <br>
         <div id="test-post-2">
-            <h1 id="center-column-header">
+            <h1 class="center-column-header">
                 Latest Project
              </h1>  
-            <img id="center-column-img"
+            <img class="center-column-img"
                 src="images/pexels-yigithan-bal-1108532.jpg"
                 alt="Paint Palette"
              > 
-             <h3 id="center-column-header">
+             <h3 class="center-column-header">
                 Project Name
              </h3>  
-            <p id="center-column-p">
+            <p class="center-column-p">
                 Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Enim neque dolores, dolor voluptate eum quod veniam 
                 pariatur nesciunt dicta tenetur eaque, iste eveniet culpa unde. Consequuntur hic 
@@ -125,7 +130,7 @@
                 Paintings
             </h4>
             <a href="#">
-                <img id="sidebar-1-img"
+                <img class="sidebar-1-img"
                     src="images/pexels-deeana-arts-1646953 (1).jpg"
                     alt="Paint Palette"
                 >
@@ -134,7 +139,7 @@
                 </p>
                 </a>
                 <a href="#">
-                    <img id="sidebar-1-img"
+                    <img class="sidebar-1-img"
                         src="images/pexels-yigithan-bal-1108532.jpg"
                         alt="Paint Palette"
                     >
@@ -143,7 +148,7 @@
                     </p>
                     </a>
                     <a href="#">
-                        <img id="sidebar-1-img"
+                        <img class="sidebar-1-img"
                             src="images/pexels-yigithan-bal-1108532.jpg"
                             alt="Paint Palette"
                         >
@@ -159,4 +164,5 @@
         </p> 
     </div>
 </body>
+<script src="searchresults.js"></script>
 </html>

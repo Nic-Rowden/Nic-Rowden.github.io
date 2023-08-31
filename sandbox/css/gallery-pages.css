@@ -15,6 +15,13 @@ body{
     text-decoration: none; 
     font-size: 17px;
 }
+#searchForm{
+    float: right;
+    display: block;
+    text-align: right;
+    align-items: center;
+}
+
 
 #logo{
     float:left;
