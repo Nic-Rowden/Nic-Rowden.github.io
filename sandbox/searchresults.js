@@ -1,31 +1,32 @@
-// Get references to the elements
-const searchForm = document.getElementById('searchForm');
-const searchInput = document.getElementById('searchInput');
+// Get the query parameter from the URL
+const queryParams = new URLSearchParams(window.location.search);
+const searchTerm = queryParams.get('query');
+
+// Get references to the gallery items
 const galleryItems = document.querySelectorAll('.gallery-img');
 
-// Attach event listener to the form submission
-searchForm.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the form from actually submitting
-    performSearch();
-});
-
-// Attach event listener to the Enter key press in the search input
-searchInput.addEventListener('keyup', (event) => {
-    if (event.key === 'Enter') {
-        performSearch();
+// Loop through each gallery item and hide/show based on search term
+galleryItems.forEach((item) => {
+    const itemName = item.querySelector('.projectname').textContent.toLowerCase();
+    if (itemName.includes(searchTerm)) {
+        item.style.display = 'block';
+    } else {
+        item.style.display = 'none';
     }
 });
 
-function performSearch() {
-    const searchTerm = searchInput.value.trim().toLowerCase();
+// Assuming you have an input element with an id of "searchInput"
+const searchInput = document.getElementById("searchInput");
 
-    // Loop through each gallery item and hide/show based on search term
-    galleryItems.forEach((item) => {
-        const itemName = item.querySelector('.projectname').textContent.toLowerCase();
-        if (itemName.includes(searchTerm)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
+searchInput.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    performSearch();
+  }
+});
+
+function performSearch() {
+  const newSearchTerm = searchInput.value.trim().toLowerCase();
+  
+  // Redirect to the search results page with the new search term as a query parameter
+  window.location.href = `search-results.html?query=${encodeURIComponent(newSearchTerm)}`;
 }
