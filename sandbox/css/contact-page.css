@@ -1,0 +1,108 @@
+
+body{
+    background-color: #348aa7;
+}
+
+.top-nav{
+    position: sticky;
+    display: block;
+    text-align: right;
+    background-color: #5dd39e;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    color: #513b56;
+    text-decoration: none; 
+    font-size: 17px;
+}
+
+#logo{
+    float:left;
+    padding-left: 1%;
+    display: block;
+}
+
+#mid-nav{
+    display: block;
+    text-align: center;
+    background-color: #5dd39e;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    color: #513b56;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-button{
+    text-align: center;
+    position: relative;
+    padding:8px;
+    color: #513b56;
+    border-width: 2px;
+    border-color: #513b56;
+    margin: 0%;
+    text-decoration: none;
+
+
+}
+a{
+    text-decoration:none;
+    color: #513b56;
+}
+
+a:hover {
+    box-shadow: 1px 1px 8px 1px rgb(41, 41, 41);
+}
+
+a:active {
+    box-shadow: inset 1px 1px 8px 1px rgb(41, 41, 41);
+    color: white;
+}
+
+input[type=text]{
+    background-color: rgb(209, 209, 209);
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+}
+
+input:active{
+    background-color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+#header-text{ 
+    color: white;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 70px;
+    background-color: #0000003d;
+    margin-top:14%;
+}
+
+#header-home{
+    background-image:
+    linear-gradient(#348ca900,#1a4354a9),
+    url('/sandbox/images/pexels-steve-johnson-933967.jpg');
+    background-size: auto;
+    width: 98%;
+    height: 400px;
+    padding: 1%;
+}
+
+#layout {
+    text-align: center;
+    background-color: whitesmoke;
+    padding:2%;
+}
+
+.footer{
+    text-align: center;
+    background-color: #5dd39e;
+    padding: 1%;
+    color: #513b56;
+    text-decoration: none; 
+    font-size: 17px;
+}
