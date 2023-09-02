@@ -123,8 +123,30 @@
             </p>
         </div>
         <hr>
-        <br>    
+        <br>
+
+
     </div>
+
+    <script>
+        // Get the center-column element
+        const centerColumn = document.getElementById("center-column");
+      
+        // Convert the children of center-column to an array
+        const childrenArray = Array.from(centerColumn.children);
+      
+        // Reverse the array to display the latest content at the top
+        const reversedChildrenArray = childrenArray.reverse();
+      
+        // Clear the center-column element
+        centerColumn.innerHTML = "";
+      
+        // Append the reversed content back to center-column
+        reversedChildrenArray.forEach((child) => {
+          centerColumn.appendChild(child);
+        });
+    </script>
+
         <div id="sidebar-2">
             <h4>
                 Paintings
@@ -163,6 +185,8 @@
            Footer
         </p> 
     </div>
-</body>
+
 <script src="searchresults.js"></script>
+ 
+</body>
 </html>
